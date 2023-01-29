@@ -1,12 +1,12 @@
 package main
 
 import (
-	"github.com/gin-gonic/gin"
 	"github.com/dongdonjuhahaha/traffic/controllers"
+	"github.com/gin-gonic/gin"
 )
 
 func main() {
 	router := gin.Default()
-	router.GET("/returns", controllers.GetReturn )
-	router.Run("localhost:9090")
+	router.GET("/returns", controllers.GetReturn)
+	router.Run(":9090")
 }
